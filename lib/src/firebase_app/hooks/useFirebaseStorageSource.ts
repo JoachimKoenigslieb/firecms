@@ -32,7 +32,13 @@ export function useFirebaseStorageSource({ firebaseApp }: FirebaseStorageSourceP
 
     useEffect(() => {
         if (!firebaseApp) return;
-        setStorage(getStorage(firebaseApp));
+
+        try {
+            setStorage(getStorage(firebaseApp));
+        } catch (e: any) {
+            console.error("Could not set storage.", e)
+            setStorage(undefined)
+        }
     }, [firebaseApp]);
 
     const urlsCache: Record<string, DownloadConfig> = {};
