@@ -1,0 +1,3 @@
+import { EntityValues, ResolvedArrayProperty, ResolvedStringProperty, StorageConfig, UploadedFileContext } from "../../types";
+export declare function resolveFilenameString<M>(input: string | ((context: UploadedFileContext) => Promise<string> | string), storage: StorageConfig, values: EntityValues<M>, entityId: string, path: string, property: ResolvedStringProperty | ResolvedArrayProperty<string[]>, file: File, propertyKey: string): Promise<string>;
+export declare function resolveStoragePathString<M>(input: string | ((context: UploadedFileContext) => string), storage: StorageConfig, values: EntityValues<M>, entityId: string, path: string, property: ResolvedStringProperty | ResolvedArrayProperty<string[]>, file: File, propertyKey: string): string;
