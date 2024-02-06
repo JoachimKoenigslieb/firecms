@@ -22,6 +22,7 @@ From versions 2.0.0-beta.1 versions are released under the new name.**
 <br />
 
 
+
 [![NPM](https://img.shields.io/npm/v/firecms.svg)](https://www.npmjs.com/package/firecms) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 FireCMS is a headless CMS and admin panel, built by developers for developers.
